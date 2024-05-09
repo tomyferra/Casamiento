@@ -10,9 +10,7 @@ import ConfirmAssistance from './components/ConfirmAssistance'
 import FinalWords from './components/FinalWords'
 import Regalos from "./components/Regalos";
 
-
 export default function Home() {
-
 
   return (
     <>

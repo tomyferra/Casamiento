@@ -1,113 +1,189 @@
+'use client'
 import Image from "next/image";
+import FioreyTomi from "../images/FioreyTomiBlack.png";
+import IconoAnillos from '../images/icono-anillos.svg'
+import IconoRegalo from '../images/Regalos.svg'
+import IconoDressCode from '../images/DressCode.svg'
+import IconoCalendar from '../images/Calendar.svg'
+import Img1 from '../images/img1.webp'
+import Img2 from '../images/img2.webp'
+import Img3 from '../images/img3.webp'
+import Img4 from '../images/img4.webp'
+import CountUp from 'react-countup';
+
 
 export default function Home() {
+  var hoy = new Date();
+  var aniversario = new Date('2012-02-04');
+  var diferencia = hoy - aniversario;
+  var diferenciaDias = diferencia / (1000 * 60 * 60 * 24);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="h-100 flex flex-col bg-cover bg-fixed bg-center bg-no-repeat shadow-lg backgroundImage">
+        <div className="p-4 sm:p-8 flex items-center justify-center">
+          <Image src={FioreyTomi} alt="logoCasamiento" />
+          <a href="#Detalles"><div className="scroll-down"></div></a>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div id="Detalles" className="flex-col p-24 bg-white font-Montserrat text-black flex items-center justify-center">
+        <p>Llegó el dia tan esperado</p>
+        <h1 className=" p-2 text-2xl text-center">¡Nos vamos a casar y queremos festejarlo con vos!</h1>
+      </div>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="flex-col p-11 secondaryColor font-Montserrat text-white flex items-center justify-center">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={IconoAnillos}
+          alt="IconoAnillos"
+          width={150}
         />
+        <h1 className=" p-2 text-2xl text-center">CEREMONIA Y FIESTA</h1>
+        <p className="text-l text-center">15 de Marzo de 2025 a las 17:00 horas</p>
+        <p className="text-l text-center">Espacio Mendoza, El Molino</p>
+        <p className="text-l text-center p-2">¡Te esperamos!</p>
+        <a target="_blank" href="https://maps.app.goo.gl/qyEwKpHfan6BHgN98" className="p-2 m-2 border bg-white hover:bg-transparent hover:text-black text-black py-2 px-4 rounded-full">COMO LLEGAR</a>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="p-11 bg-white font-Montserrat text-black items-center justify-center">
+        <h1 className="text-xl italic p-5 text-center">NOSOTROS</h1>
+        <div className="countUp flex p-10 items-center justify-center">
+          <div className="flex flex-col p-5 m-5 secondaryColor text-white rounded">
+            <h1 className="text-xl text-center">Dias juntos</h1>
+            <CountUp start={0} end={diferenciaDias} duration={10}></CountUp>
+          </div>
+          <div className="flex flex-col p-5 m-5 secondaryColor text-white rounded">
+            <h1 className="text-xl text-center">Viajes juntos</h1>
+            <CountUp start={0} end={34} duration={10}></CountUp>
+          </div>
+          <div className="flex flex-col p-5 m-5 secondaryColor text-white rounded">
+          <h1 className="text-xl text-center">Otra Medida?</h1>
+            <CountUp start={0} end={57} duration={10}></CountUp>
+          </div>
+        </div>
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img1}
+              alt="Img1"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img2}
+              alt="Img2"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img3}
+              alt="Img3"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img4}
+              alt="Img4"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img4}
+              alt="Img4"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img2}
+              alt="Img2"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img1}
+              alt="Img1"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={Img3}
+              alt="Img3"
+              width={350}
+              className="rounded hover:scale-110"
+            />
+          </div>
+        </div>
       </div>
-    </main>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="bg-sky-300 flex-col p-11 secondaryColor font-Montserrat text-white flex items-center justify-center">
+        <Image
+          src={IconoRegalo}
+          alt="IconoRegalo"
+          width={150}
+        />
+        <p className="text-l text-center">Tu presencia es el mejor regalo!</p>
+        <p className="text-l text-center">Pero si querés, podés colaborar con nuestra</p>
+        <p className="text-l text-center p-2">Luna de Miel...</p>
+        <a target="_blank" href="https://maps.app.goo.gl/qyEwKpHfan6BHgN98" className="p-2 m-2 bg-white border hover:bg-transparent text-[#a6bcc8] hover:text-white py-2 px-4 rounded-full">Ver Datos Bancarios</a>
+      </div>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="flex-col p-11 bg-white font-Montserrat text-black flex items-center justify-center">
+        <Image
+          src={IconoDressCode}
+          alt="IconoDressCode"
+          width={150}
+          style={{ filter: 'invert(100%)' }}
+        />
+        <h1 className=" p-2 text-2xl text-center">DRESS CODE</h1>
+        <p className="text-l text-center">Elegante</p>
+        <p className="text-l text-center p-2">Ponete lindo/a que las fotos seran increibles!</p>
+      </div>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="bg-sky-300 flex-col p-11 secondaryColor font-Montserrat text-white flex items-center justify-center">
+        <p className="text-xl italic p-5 text-center">LA FIESTA ES SOLO PARA ADULTOS!</p>
+        <p className="text-l text-center">Pensamos en un casamiento de sólo adultos por la dinámica de la fiesta.</p>
+        <p className="text-l text-center">Queremos que pases una noche increible con nosotros!</p>
+        <p className="text-l text-center p-2">Si no tenés con quién dejar a tus hijos y se te hace realmente imposible, avisanos</p>
+      </div>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="flex-col p-11 bg-white font-Montserrat text-black flex items-center justify-center">
+        <Image
+            src={IconoCalendar}
+            alt="IconCalendar"
+            width={150}
+        />
+        <p className="text-xl italic p-5 text-center">CONFIRMAR ASISTENCIA</p>
+        <p className="text-l text-center">Por favor, confirma asistencia en el siguiente formulario!</p>
+        <a target="_blank" href="https://forms.gle/ZNURycvWuUR8k9EEA" className="p-2 m-2 border secondaryColor hover:bg-white hover:text-black text-white py-2 px-4 rounded-full">Confirmar Asistencia</a>
+      </div>
+      {/* ################################################################################################
+      ################################################################################################ */}
+      <div className="bg-sky-300 flex-col p-11 secondaryColor font-Montserrat text-white flex items-center justify-center">
+        <p className="text-xl italic p-5 text-center">GRACIAS POR SER PARTE DE ESTE MOMENTO UNICO!</p>
+        <p className="text-l text-center">Esperamos que la pases tan bien como nosotros.</p>
+        <p className="text-l text-center p-5">Nos vemos el 15 de Marzo, preparate!!</p>
+      </div>
+    </>
   );
 }

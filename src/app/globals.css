@@ -48,3 +48,9 @@ html { scroll-behavior: smooth; }
   -moz-animation: fade_move_down 2s ease-in-out infinite;
   animation: fade_move_down 2s ease-in-out infinite;
 }
+
+@media (max-width:320px) {
+  .backgroundImage{
+    background-size: contain;
+  }
+}

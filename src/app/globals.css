@@ -51,6 +51,7 @@ html { scroll-behavior: smooth; }
 
 @media (max-width:320px) {
   .backgroundImage{
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
 }

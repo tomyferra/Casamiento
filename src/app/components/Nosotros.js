@@ -5,6 +5,7 @@ import Img1 from '../../images/img1.webp'
 import Img2 from '../../images/img2.webp'
 import Img3 from '../../images/img3.webp'
 import Img4 from '../../images/img4.webp'
+import Img5 from '../../images/img5.webp'
 
 
 function Nosotros() {
@@ -66,7 +67,7 @@ function Nosotros() {
       </div>
       <div className="flex items-center justify-center">
         <Image
-          src={Img4}
+          src={Img5}
           alt="Img4"
           width={350}
           className="rounded hover:scale-110"

@@ -6,6 +6,9 @@ import Img2 from '../../images/img2.webp'
 import Img3 from '../../images/img3.webp'
 import Img4 from '../../images/img4.webp'
 import Img5 from '../../images/img5.webp'
+import Img6 from '../../images/img6.webp'
+import Img7 from '../../images/img7.webp'
+import Img8 from '../../images/img8.webp'
 
 
 function Nosotros() {
@@ -27,16 +30,12 @@ function Nosotros() {
         <h1 className="text-xl text-center">Viajes juntos</h1>
         <CountUp start={0} end={34} duration={10}></CountUp>
       </div>
-      <div className="flex flex-col p-5 m-5 max-w-[90%] md:max-w-[30%] secondaryColor text-white rounded">
-      <h1 className="text-xl text-center">Otra Medida?</h1>
-        <CountUp start={0} end={57} duration={10}></CountUp>
-      </div>
     </div>
     <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
       <div className="flex items-center justify-center">
         <Image
           src={Img1}
-          alt="Img1"
+          alt={Img1}
           width={350}
           className="rounded hover:scale-110"
         />
@@ -44,7 +43,7 @@ function Nosotros() {
       <div className="flex items-center justify-center">
         <Image
           src={Img2}
-          alt="Img2"
+          alt={Img2}
           width={350}
           className="rounded hover:scale-110"
         />
@@ -52,7 +51,7 @@ function Nosotros() {
       <div className="flex items-center justify-center">
         <Image
           src={Img3}
-          alt="Img3"
+          alt={Img3}
           width={350}
           className="rounded hover:scale-110"
         />
@@ -60,7 +59,7 @@ function Nosotros() {
       <div className="flex items-center justify-center">
         <Image
           src={Img4}
-          alt="Img4"
+          alt={Img4}
           width={350}
           className="rounded hover:scale-110"
         />
@@ -68,31 +67,31 @@ function Nosotros() {
       <div className="flex items-center justify-center">
         <Image
           src={Img5}
-          alt="Img4"
+          alt={Img5}
           width={350}
           className="rounded hover:scale-110"
         />
       </div>
       <div className="flex items-center justify-center">
         <Image
-          src={Img2}
-          alt="Img2"
+          src={Img6}
+          alt={Img6}
           width={350}
           className="rounded hover:scale-110"
         />
       </div>
       <div className="flex items-center justify-center">
         <Image
-          src={Img1}
-          alt="Img1"
+          src={Img7}
+          alt={Img7}
           width={350}
           className="rounded hover:scale-110"
         />
       </div>
       <div className="flex items-center justify-center">
         <Image
-          src={Img3}
-          alt="Img3"
+          src={Img8}
+          alt={Img8}
           width={350}
           className="rounded hover:scale-110"
         />

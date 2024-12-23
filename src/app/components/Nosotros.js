@@ -22,14 +22,14 @@ function Nosotros() {
     <div className="p-11 bg-white font-Montserrat text-black items-center justify-center">
     <h1 className="text-xl italic p-5 text-center">NOSOTROS</h1>
     <div className="countUp flex flex-col md:flex-row p-10 items-center justify-center">
-    <div className="flex flex-col p-5 m-5 max-w-[90%] md:max-w-[30%] secondaryColor text-white rounded">
+    {/* <div className="flex flex-col p-5 m-5 max-w-[90%] md:max-w-[30%] secondaryColor text-white rounded">
         <h1 className="text-xl text-center">Dias juntos</h1>
         <CountUp start={0} end={diferenciaDias} duration={10}></CountUp>
-      </div>
-      <div className="flex flex-col p-5 m-5 max-w-[90%] md:max-w-[30%] secondaryColor text-white rounded">
-        <h1 className="text-xl text-center">Viajes juntos</h1>
-        <CountUp start={0} end={34} duration={10}></CountUp>
-      </div>
+    </div>
+    <div className="flex flex-col p-5 m-5 max-w-[90%] md:max-w-[30%] secondaryColor text-white rounded">
+      <h1 className="text-xl text-center">Viajes juntos</h1>
+      <CountUp start={0} end={34} duration={10}></CountUp>
+    </div> */}
     </div>
     <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
       <div className="flex items-center justify-center">

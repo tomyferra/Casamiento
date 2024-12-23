@@ -17,11 +17,11 @@ export default function Home() {
       <Hero />
       <Intro />
       <CeremoniaYFiesta />
-      <Nosotros />
-      <Regalos />
-      <DressCode />
-      <AdultsOnly />
       <ConfirmAssistance />
+      <Regalos />
+      <Nosotros />
+      <AdultsOnly />
+      <DressCode />
       <FinalWords />
     </>
   );

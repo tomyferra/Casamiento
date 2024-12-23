@@ -25,11 +25,11 @@ function Regalos() {
         <div className="relative rounded-lg text-blue-gray-500 antialiased font-sans text-base font-light leading-relaxed w-full md:w-3/5 lg:w-2/5 2xl:w-1/4 min-w-[80%] md:min-w-[60%] lg:min-w-[40%] 2xl:min-w-[25%] max-w-[100%] md:max-w-[60%] lg:max-w-[40%] 2xl:max-w-[25%] bg-transparent shadow-none">
           <div className=" flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md mx-auto w-full max-w-[24rem]">
           <h1 className="text-xl text-center font-bold">Datos Bancarios</h1>
-          <p className="text-l text-center">Nombre del Titular: Tomas Ferrari</p>
-          <p className="text-l text-center">CBU: 0170099240000062957416</p>
-          <p className="text-l text-center">Alias: ferrari.tomas</p>
-          <p className="text-l text-center">DNI: 38258853</p>
-          <p className="text-l text-center">Banco BBVA</p>
+          <p className="text-l text-center">Nombre del Titular: Altobello Fiorella</p>
+          <p className="text-l text-center">CBU: 0070153830004026307926</p>
+          <p className="text-l text-center">Alias: FIOREALTOBELLO</p>
+          <p className="text-l text-center">CUIT: 23394533874</p>
+          <p className="text-l text-center">Banco Galicia</p>
           <button onClick={handleOpen} className="p-2 m-2 border secondaryColor hover:bg-white hover:text-black text-white py-2 px-4 rounded-full">Cerrar</button>
           </div>
           </div>

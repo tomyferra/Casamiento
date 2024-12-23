@@ -4,7 +4,7 @@ import IconoCalendar from '../../images/Calendar.svg'
 
 function ConfirmAssistance() {
   return (
-    <div className="flex-col p-11 bg-white font-Montserrat text-black flex items-center justify-center">
+    <div className="flex-col p-5 bg-white font-Montserrat text-black flex items-center justify-center">
       <Image
           src={IconoCalendar}
           alt="IconCalendar"

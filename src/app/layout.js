@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Fiore & Tomi",
   description: "15 de Marzo 2025",
+  icons: {
+    icon: '/icon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {

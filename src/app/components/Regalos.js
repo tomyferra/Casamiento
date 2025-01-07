@@ -16,9 +16,8 @@ function Regalos() {
         alt="IconoRegalo"
         width={150}
       />
-      <p className="text-l text-center">Tu presencia es el mejor regalo!</p>
-      <p className="text-l text-center p-2">Pero si querés, podés colaborar con nuestra Luna de Miel!</p>
-      <button onClick={handleOpen} className="p-2 m-2 bg-white border hover:bg-transparent text-[#a6bcc8] hover:text-white py-2 px-4 rounded-full">Ver Datos Bancarios</button>
+      <p className="text-xl italic p-5 text-center">REGALOS</p>
+      <button onClick={handleOpen} className="p-2 m-2 bg-white border text-black hover:bg-transparent py-2 px-4 rounded-full">Ver Datos Bancarios</button>
 
       <Dialog open={open} handler={handleOpen} className="fixed overflow-auto inset-0 z-50 m-0 max-w-[100%]">
         <div className="grid place-items-center w-screen h-screen bg-black bg-opacity-50 max-w-[100%]">

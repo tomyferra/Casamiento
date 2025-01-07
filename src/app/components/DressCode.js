@@ -14,7 +14,7 @@ function DressCode() {
     />
     <h1 className=" p-2 text-2xl text-center">DRESS CODE</h1>
     <p className="text-l text-center">Elegante</p>
-    <p className="text-l text-center p-2">Ponete lindo/a que las fotos seran increibles!</p>
+
   </div>
   )
 }

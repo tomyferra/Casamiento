@@ -19,5 +19,8 @@ module.exports = {
       },
     },
   },
+  fontFamily: {
+    'cheri': ['Cheri', 'cursive'],
+  },
   plugins: [],
 };

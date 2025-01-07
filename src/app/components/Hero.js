@@ -21,7 +21,7 @@ function Hero() {
     <div className="flex flex-col bg-cover bg-center shadow-lg backgroundImage h-screen justify-center items-center">
       <div className="p-4 sm:p-8 flex flex-col items-center justify-center">
         <Image class = "mb-10" src={FioreyTomi} alt="logoCasamiento" />
-        <div className="flex p-5 m-5 text-black rounded">
+        <div className="flex flex-col sm:flex-row p-5 text-black rounded">
           <h1 className="text-2xl text-center p-1">Nos casamos en</h1>
           <CountUp className="text-xl" start={0} end={diferenciaDias} duration={5}></CountUp>
           <h1 className="text-2xl text-center p-1"> días!</h1>
@@ -31,20 +31,6 @@ function Hero() {
         </a>
       </div>
     </div>
-
-
-
-  //   <div className="flex flex-col bg-cover bg-center shadow-lg backgroundImage">
-  //   <div className="p-4 sm:p-8 flex-col items-center justify-center">
-  //     <Image src={FioreyTomi} alt="logoCasamiento" />
-  //     <div className="flex flex-col p-5 m-5 max-w-[20%] md:max-w-[30%] text-white rounded border">
-  //       <h1 className="text-xl text-center">Faltan: </h1>
-  //       <CountUp start={0} end={diferenciaDias} duration={10}></CountUp>
-  //       <h1 className="text-xl text-center">dias!</h1>
-  //     </div>
-  //     <a href="#Detalles"><div className="scroll-down"></div></a>
-  //   </div>
-  // </div>
   )
 }
 

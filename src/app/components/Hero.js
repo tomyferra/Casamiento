@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
-// import FioreyTomi from "../../images/FioreyTomiBlack4.png";
-import FioreyTomi from "../../images/FioreyTomiBlack2.png";
+import FioreyTomi from "../../images/FioreyTomiBlack4.png";
+// import FioreyTomi from "../../images/FioreyTomiBlack2.png";
 import CountUp from 'react-countup';
 
 

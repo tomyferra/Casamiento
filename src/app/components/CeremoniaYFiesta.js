@@ -4,7 +4,7 @@ import IconoAnillos from '../../images/icono-anillos.svg'
 
 function CeremoniaYFiesta() {
   return (
-    <div className="flex-col p-11 secondaryColor font-Montserrat text-white flex items-center justify-center">
+    <div id="Detalles" className="flex-col p-11 secondaryColor font-Montserrat text-white flex items-center justify-center">
       <Image
         src={IconoAnillos}
         alt="IconoAnillos"

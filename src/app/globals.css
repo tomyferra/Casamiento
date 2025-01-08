@@ -7,6 +7,11 @@
     font-family: 'Monserrat';
     src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap) format('woff2');
   }
+
+  @font-face {
+    font-family: 'Breathing';
+    src: url("fonts/Breathing.ttf");
+  }
 }
 html { scroll-behavior: smooth; }
 

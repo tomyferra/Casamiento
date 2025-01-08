@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        Breathing: ["Breathing"],
       },
     },
   },

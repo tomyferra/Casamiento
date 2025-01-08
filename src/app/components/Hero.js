@@ -17,13 +17,10 @@ function Hero() {
       <div className="p-4 sm:p-8 flex flex-col items-center justify-center">
         <Image src={FioreyTomi} alt="logoCasamiento" />
         <div className="flex flex-col sm:flex-row p-5 text-black rounded">
-          <h1 className="text-2xl text-center p-1">Nos casamos en</h1>
-          <CountUp className="text-xl" start={0} end={diferenciaDias} duration={5}></CountUp>
-          <h1 className="text-2xl text-center p-1"> días!</h1>
+          <h1 className="font-Breathing text-3xl text-center p-2">Nos casamos en</h1>
+          <CountUp className="text-2xl p-1" start={0} end={diferenciaDias} duration={5}></CountUp>
+          <h1 className="font-Breathing text-3xl text-center p-2"> días!</h1>
         </div>
-        {/* <a href="#Detalles">
-          <div className="scroll-down"></div>
-        </a> */}
       </div>
     </div>
   )

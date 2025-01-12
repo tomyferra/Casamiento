@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import Intro from './components/intro'
+import Musica from './components/Musica'
 import CeremoniaYFiesta from './components/CeremoniaYFiesta'
 import Nosotros from './components/Nosotros'
 import Hero from './components/Hero'
@@ -21,6 +21,7 @@ export default function Home() {
       <Nosotros />
       <AdultsOnly />
       <DressCode />
+      <Musica />
       <FinalWords />
     </>
   );
